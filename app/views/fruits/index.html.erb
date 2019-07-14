@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fruits</h1>
+
+<table id="fruits">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <%= render @fruits %>
+  </tbody>
+</table>
+
+<br>
+
+<div id="new-fruit">
+<%= link_to 'New Fruit', new_fruit_path, remote: true %>
+</div>

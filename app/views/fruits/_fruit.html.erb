@@ -1,0 +1,6 @@
+  <tr>
+    <td><%= fruit.name %></td>
+    <td><%= link_to 'Show', fruit %></td>
+    <td><%= link_to 'Edit', edit_fruit_path(fruit) %></td>
+    <td><%= link_to 'Destroy', fruit, method: :delete, data: { confirm: 'Are you sure?', remote: true }, class: 'delete' %></td>
+  </tr>
